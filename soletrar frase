@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+void soletra(char frase[])
+{
+    int i;
+    for(i=0; frase[i] != '\0'; i++)
+    {
+        printf("%c-", frase[i]);
+    }
+
+}
+
+int main()
+{
+    char vet[101];
+    puts("Digite uma frase: ");
+    gets(vet);
+
+    soletra(vet);
+
+
+    return 0;
+}
